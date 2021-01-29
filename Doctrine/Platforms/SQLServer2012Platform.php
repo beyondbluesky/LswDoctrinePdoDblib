@@ -1,9 +1,9 @@
 <?php
 
 namespace Lsw\DoctrinePdoDblib\Doctrine\Platforms;
-use Doctrine\DBAL\Platforms\SQLServer2008Platform as SQLServer;
+use Doctrine\DBAL\Platforms\SQLServer2012Platform as SQLServer;
 
-class SQLServer2008Platform extends SQLServer
+class SQLServer2012Platform extends SQLServer
 {
     /**
      * @var string
@@ -20,7 +20,7 @@ class SQLServer2008Platform extends SQLServer
     
     /**
      * @param string $dateTimeFormatString
-     * @return \Lsw\DoctrinePdoDblib\Doctrine\Platforms\SQLServer2008Platform
+     * @return \Lsw\DoctrinePdoDblib\Doctrine\Platforms\SQLServer2012Platform
      */
     public function setDateTimeFormatString($dateTimeFormatString){
         $this->dateTimeFormatString = $dateTimeFormatString;
